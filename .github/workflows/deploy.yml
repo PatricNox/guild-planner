@@ -1,0 +1,19 @@
+name: Setup & Deploy
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production
+        uses: appleboy/ssh-action@master
+        with:
+          username: ${{ secrets.REMOTE_USER }}
+          host: ${{ secrets.REMOTE_HOST }}
+          port: ${{ secrets.REMOTE_HOST_PORT }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: "cd ~/bots/guild-planner && chmod +x ./server_deploy.sh && ./server_deploy.sh"
