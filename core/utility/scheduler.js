@@ -55,7 +55,7 @@ module.exports = class RiotAPICommand extends Command {
 
       let weekDay = args[3];
       let time = args[4];
-      let descriptionValue = args[5] ?? "";
+      let descriptionValue = args[5] ? args[5] : "";
 
       if (!raid || !gameMode || !weekDay || !time) {
         msg.channel.send(
