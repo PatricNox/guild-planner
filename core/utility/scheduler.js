@@ -86,6 +86,12 @@ module.exports = class RiotAPICommand extends Command {
         true
       );
 
+      // Ping raiders
+      msg.member.guild.channels
+        .find((c) => c.id == process.env.ANNOUNCE_CHANNEL)
+        .send(`<@&${process.env.RAIDER_ROLE}>`)
+
+      // Send message
       msg.member.guild.channels
         .find((c) => c.id == process.env.ANNOUNCE_CHANNEL)
         .send(embed)
