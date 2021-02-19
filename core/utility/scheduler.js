@@ -15,7 +15,12 @@ module.exports = class RiotAPICommand extends Command {
 
   run(msg) {
     if (msg.channel.id === process.env.SCHEDULE_CHANNEL) {
-      const args = msg.content.slice(".".length).split(" ");
+      const regex = new RegExp('"[^"]+"|[\\S]+', 'g');
+      const args = [];
+      msg.content.match(regex).forEach(element => {
+          if (!element) return;
+          return args.push(element.replace(/"/g, ''));
+      });
 
       // Choose raid.
       let raid = args[1];
