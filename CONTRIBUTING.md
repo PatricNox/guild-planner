@@ -1,6 +1,6 @@
 <center>
 
-![Guild planner logo](https://github.com/PatricNox/guild-planner/assets/logo.png "Guild planner logo")
+![Guild planner logo](/assets/logo.png?raw=true "Guild planner logo")
 
 </center>
 

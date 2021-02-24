@@ -1,6 +1,6 @@
 <center>
 
-![Guild planner logo](https://github.com/PatricNox/guild-planner/assets/logo.png "Guild planner logo")
+![Guild planner logo](/assets/logo.png?raw=true "Guild planner logo")
 
 </center>
 
@@ -11,7 +11,7 @@ Discord bot for World of Warcraft Guilds - Plan your raids more efficiently!
 ## Preview
 
 ### Feature: Planner
-![Guild planner - planner feature preview](https://github.com/PatricNox/guild-planner/assets/preview-planner.png "Guild planner - planner feature preview")
+![Guild planner - planner feature preview](/assets/preview-planner.png?raw=true "Guild planner - planner feature preview")
 
 
 ## Requirements
