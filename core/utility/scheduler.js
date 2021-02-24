@@ -79,7 +79,7 @@ module.exports = class RiotAPICommand extends Command {
       // Style up message output.
       const embed = new RichEmbed()
         .setTitle(`${raid} (${gameMode.toUpperCase()})`)
-        .setAuthor("Raid Planner", process.env.BOT_AUTHOR_IMAGE)
+        .setAuthor("Guild Planner 1.0.3", process.env.BOT_AUTHOR_IMAGE)
         .setDescription(weekDay + " " + time)
         .setThumbnail(process.env.BOT_AUTHOR_THUMBNAIL)
         .setColor(0x0000ff);

@@ -1,6 +1,6 @@
 {
   "name": "wow-guild-planner",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A discord bot for World of Warcraft Guilds",
   "main": "index.js",
   "dependencies": {
